@@ -8,7 +8,7 @@ document.querySelectorAll('nav ul li a').forEach(anchor => {
         document.querySelector(this.getAttribute('href')).classList.add('active');
 
         // Close the menu on link click (for mobile view)
-        document.getElementById('nav-list').classList.remove('show');
+        document.querySelector('nav').classList.remove('show');
     });
 });
 
@@ -18,5 +18,5 @@ document.querySelector('.content section').classList.add('active');
 
 // Toggle menu visibility on mobile
 document.getElementById('menu-icon').addEventListener('click', function() {
-    document.getElementById('nav-list').classList.toggle('show');
+    document.querySelector('nav').classList.toggle('show');
 });
